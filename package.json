@@ -1,23 +1,19 @@
 {
-  "name": "playwright_tests",
+  "name": "swift-translator-tests",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Nimesha-awpt/playwright_Tests.git"
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:node": "node tests/swift-translator-node.js",
+    "install:browsers": "npx playwright install"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["playwright", "automation", "testing"],
   "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/Nimesha-awpt/playwright_Tests/issues"
-  },
-  "homepage": "https://github.com/Nimesha-awpt/playwright_Tests#readme",
+  "description": "Automated tests for Swift Translator Singlish to Sinhala conversion",
   "devDependencies": {
     "@playwright/test": "^1.58.0",
+    "playwright": "^1.58.0",
     "@types/node": "^25.1.0"
   }
 }
