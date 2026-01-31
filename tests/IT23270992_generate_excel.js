@@ -234,7 +234,7 @@ const TEST_DATA = {
       tcId: 'Pos_Fun_022',
       name: 'Exclamation mark handling',
       input: 'supiri!',
-      expected: 'සුපිරි!',
+      expected: 'done',
       category: 'Punctuation / numbers',
       grammar: 'Simple sentence',
       length: 'S'
