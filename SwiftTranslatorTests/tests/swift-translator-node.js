@@ -135,7 +135,7 @@ async function runTests() {
      {
       tcId: 'Neg_Fun_0001',
       name: 'Convert interrogative request',
-      input: 'mamagedharayanavaa',
+      input: 'mamamalagedharayanavaa',
       expected: 'මම ගෙදර යනවා',
       type: 'S',
       what: 'Typographical error handling; Simple sentence; S (≤30 characters); Robustness validation'
@@ -166,7 +166,7 @@ async function runTests() {
     },
     {
       tcId: 'Pos_UI_002',
-      name: 'Clear input field',
+      name: 'Convert desire statement for food',
       input: 'mata banis oonee',
       expected: 'මට බනිස් ඕනේ',
       type: 'S',
