@@ -8,7 +8,7 @@ async function runTests() {
     fs.mkdirSync(resultsDir);
   }
   const resultsFile = path.join(resultsDir, 'test-results.csv');
-  fs.writeFileSync(resultsFile, 'TC ID,Test case name,Input length type,Input,Expected output,Actual output,Status,What is covered by the test\n');
+  fs.wrieFileSync(resultsFile, 'TC ID,Test case name,Input length type,Input,Expected output,Actual output,Status,What is covered by the test\n');
   
   const testCases = [
     {
@@ -298,7 +298,7 @@ async function runTests() {
     {
       tcId: 'Neg_UI_0009',
       name: 'Short negative sentence conversion test',
-      input: 'mama eya karanna be ',
+      input: 'mama eya karanna b ',
       expected: 'මම ඒය කරන්න බෑ',
       type: 'S',
       what: 'Short negative UI; S (≤30 characters); Accuracy validation'
